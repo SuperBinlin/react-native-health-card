@@ -5,7 +5,7 @@ import {
   TextInput,
   View,
 } from 'react-native';
-import HealthCard from 'react-native-health-card';
+import HealthCard from 'react-native-health-card-sleek';
 
 const styles = StyleSheet.create({
   container: {
