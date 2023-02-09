@@ -1,6 +1,6 @@
 import React from 'react';
 import { Image, Text, View } from 'react-native';
-import FlipCard from 'react-native-flip-card';
+import FlipCard from 'react-native-flip-card-sleek';
 import PropTypes from 'prop-types';
 
 import commonStyles from '../../common.styles';
