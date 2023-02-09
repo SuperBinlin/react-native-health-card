@@ -1,7 +1,7 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Image, Text, View } from 'react-native';
 import FlipCard from 'react-native-flip-card';
+import PropTypes from 'prop-types';
 
 import commonStyles from '../../common.styles';
 import ahmCardStyles from './styles/ahmCard.styles';
@@ -85,7 +85,6 @@ export const AHMCard = ({
                       getFocusStyle(focus, 'rank'),
                       { fontSize: 12, marginTop: 2, marginLeft: 5 },
                     ]}
-                    numberOfLines={1}
                   >
                     {cardHolderName}
                   </Text>
@@ -146,8 +145,8 @@ AHMCard.propTypes = {
   cardHolderName: PropTypes.string,
   cardStyle: PropTypes.array,
   showSwipeBar: PropTypes.bool,
-  width: PropTypes.number,
-  height: PropTypes.number,
+  width: PropTypes.string,
+  height: PropTypes.string,
   focus: PropTypes.string,
   issueDate: PropTypes.string,
   issueNumber: PropTypes.string,

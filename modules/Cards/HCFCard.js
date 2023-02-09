@@ -1,7 +1,7 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Image, Text, View } from 'react-native';
 import FlipCard from 'react-native-flip-card';
+import PropTypes from 'prop-types';
 
 import commonStyles from '../../common.styles';
 import hcfCardStyles from './styles/hcfCard.styles';
@@ -44,7 +44,7 @@ export const HCFCard = ({
             <View style={[commonStyles.row, { marginTop: 10 }]}>
               {
                 showCardHolderName &&
-                  <Text style={[hcfCardStyles.text, getFocusStyle(focus, 'cardHolderName')]} numberOfLines={1}>{cardHolderName}</Text>
+                  <Text style={[hcfCardStyles.text, getFocusStyle(focus, 'cardHolderName')]}>{cardHolderName}</Text>
               }
             </View>
             <View style={[commonStyles.row]}>
@@ -111,8 +111,8 @@ HCFCard.propTypes = {
   cardHolderName: PropTypes.string,
   cardStyle: PropTypes.array,
   showSwipeBar: PropTypes.bool,
-  width: PropTypes.number,
-  height: PropTypes.number,
+  width: PropTypes.string,
+  height: PropTypes.string,
   focus: PropTypes.string,
   issueDate: PropTypes.string,
   issueNumber: PropTypes.string,
